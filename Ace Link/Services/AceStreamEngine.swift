@@ -20,6 +20,7 @@ class AceStreamEngine: Service {
             "run",
             "--rm",
             "--detach",
+            "--platform=linux/amd64",
             "--publish=\(AppConstants.Docker.enginePort):\(AppConstants.Docker.enginePort)",
             "--publish=\(AppConstants.Docker.proxyPort):\(AppConstants.Docker.proxyPort)",
             "--name=\(AppConstants.Docker.containerName)",
